@@ -275,7 +275,7 @@ function overviewContent() {
   <div class="info-card"><div class="label">预估费用</div><div class="value"><!-- REPLACE --></div></div>
 </div>
 <div class="section-head">行程概览</div>
-<div class="day-list">${DAYS.slice(1).map(d=>\`<div class="card" onclick="go(\${d.id})"><div class="name"><span class="dot" style="background:\${d.color}"></span>\${d.label} · \${d.title}</div><div class="desc">\${d.date}</div></div>\`).join('')}</div>
+<div class="day-list">${DAYS.slice(1).map(d=>`<div class="card" onclick="go(${d.id})"><div class="name"><span class="dot" style="background:${d.color}"></span>${d.label} · ${d.title}</div><div class="desc">${d.date}</div></div>`).join('')}</div>
 <div class="section-head">支付提醒</div>
 <!-- REPLACE: Add pay-summary cards as needed -->
 <div class="section-head">图例</div>
